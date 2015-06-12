@@ -1,4 +1,4 @@
-angular.module('framen', ['ui.router']).config([
+angular.module('framen', ['ui.router', 'duScroll']).config([
   '$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
       url: '/home',
@@ -7,4 +7,6 @@ angular.module('framen', ['ui.router']).config([
     });
     return $urlRouterProvider.otherwise('/home');
   }
-]);
+]).constant('API', {
+  url: '../api/source/'
+});

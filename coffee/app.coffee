@@ -1,4 +1,4 @@
-angular.module 'framen',['ui.router']
+angular.module 'framen',['ui.router','duScroll']
 .config ['$stateProvider', '$urlRouterProvider',($stateProvider,$urlRouterProvider)->
   $stateProvider.state 'home',
     url:'/home'
@@ -6,3 +6,5 @@ angular.module 'framen',['ui.router']
     controller:'mainController'
   $urlRouterProvider.otherwise '/home'
 ]
+.constant 'API',
+  url: '../api/source/'

@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>Framen Shipping</title>
+    <title>Framen Shipping Limited</title>
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js"></script>
 
     <script src="js/app.min.js"></script>
     <script src="js/controllers/controller.min.js"></script>
+    <script src="js/services/services.min.js"></script>
 
 </head>
 <body ng-app="framen">
@@ -27,17 +29,17 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             <a class="brand-logo">Framen</a>
             <ul class="right hide-on-med-and-down">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#Home" du-smooth-scroll du-scrollspy>Home</a></li>
+                <li><a href="#About" du-smooth-scroll du-scrollspy>About</a></li>
+                <li><a href="#Services" du-smooth-scroll du-scrollspy>Services</a></li>
+                <li><a href="#Contact" du-smooth-scroll du-scrollspy>Contact</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#Home" du-smooth-scroll du-scrollspy>Home</a></li>
+                <li><a href="#About" du-smooth-scroll du-scrollspy>About</a></li>
+                <li><a href="#Services" du-smooth-scroll du-scrollspy>Services</a></li>
+                <li><a href="#Contact" du-smooth-scroll du-scrollspy>Contact</a></li>
             </ul>
 
         </div>

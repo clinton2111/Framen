@@ -1,6 +1,6 @@
 angular.module('framen').controller('mainController', [
-  '$scope', function($scope) {
-    return $scope.$on('$viewContentLoaded', function() {
+  '$scope', 'mainServices', function($scope, mainServices) {
+    $scope.$on('$viewContentLoaded', function() {
       var center, img, infowindow, mapOptions, marker;
       $(".button-collapse").sideNav();
       $('.parallax').parallax();
@@ -104,5 +104,18 @@ angular.module('framen').controller('mainController', [
       google.maps.event.addListener(marker, 'mouseout', function() {});
       return infowindow.close();
     });
+    return $scope.sendEmail = function() {
+      return mainServices.sendEmail($scope.email).then(function(data) {
+        var response;
+        response = data.data;
+        if (response.status === 'Success') {
+          return Materialize.toast(response.status + ' - ' + response.message, 4000);
+        } else {
+          return Materialize.toast(response.status + ' - ' + response.message, 4000);
+        }
+      }, function(error) {
+        return Materialize.toast('Opps something went wrong.', 4000);
+      });
+    };
   }
 ]);

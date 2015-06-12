@@ -1,16 +1,16 @@
 angular.module 'framen'
-.controller 'mainController', ['$scope', ($scope)->
+.controller 'mainController', ['$scope', 'mainServices',($scope,mainServices)->
   $scope.$on('$viewContentLoaded', ()->
     $ ".button-collapse"
     .sideNav();
     $ '.parallax'
     .parallax();
     $('.slider').slider({full_width: true, height: 800});
-    center = new google.maps.LatLng(15.3912425,73.8330925)
+    center = new google.maps.LatLng(15.3912425, 73.8330925)
     mapOptions =
       zoom: 16
       scrollwheel: false
-      draggable :false
+      draggable: false
       center: center
       mapTypeId: google.maps.MapTypeId.ROADMAP
       styles: [
@@ -116,4 +116,13 @@ angular.module 'framen'
     google.maps.event.addListener marker, 'mouseout', ()->
     infowindow.close()
   );
+  $scope.sendEmail = ()->
+    mainServices.sendEmail($scope.email)
+    .then (data)->
+      response = data.data;
+      if response.status is 'Success' then Materialize.toast(response.status + ' - ' + response.message, 4000)
+      else
+        Materialize.toast(response.status + ' - ' + response.message, 4000)
+    , (error)->
+      Materialize.toast('Opps something went wrong.', 4000)
 ]
