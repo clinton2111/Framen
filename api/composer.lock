@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3721397bf6ad40af8f1e57a3ba935fd4",
+    "hash": "7d4b52fe467365aac15636fa4af9ac37",
     "packages": [
         {
             "name": "phpmailer/phpmailer",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "199bd9698b9b2b2c6b09e046fd12118fd10a7f73"
+                "reference": "9cbd8bf1cb6ca47a1c6ece7c00f4f6a5b25ef7a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/199bd9698b9b2b2c6b09e046fd12118fd10a7f73",
-                "reference": "199bd9698b9b2b2c6b09e046fd12118fd10a7f73",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/9cbd8bf1cb6ca47a1c6ece7c00f4f6a5b25ef7a8",
+                "reference": "9cbd8bf1cb6ca47a1c6ece7c00f4f6a5b25ef7a8",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2015-05-21 15:05:57"
+            "time": "2015-06-13 20:00:01"
         }
     ],
     "packages-dev": [],

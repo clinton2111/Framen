@@ -67,21 +67,21 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m6 l6">
-                    <h4 class="header">Address</h4>
+                    <h4 class="header center-align">Address</h4>
 
-                    <p class="flow-text">13, Miraton Gardens,<br>Airport Road, Chicalim,<br>Vasco Da Gama - 403711,<br>Goa,<br>India
+                    <p class="flow-text center-align">13, Miraton Gardens,<br>Airport Road, Chicalim,<br>Vasco Da Gama - 403711,<br>Goa,<br>India
                     </p>
                 </div>
                 <div class="col s12 m6 l6">
-                    <h4 class="header">Contact Details</h4>
+                    <h4 class="header center-align">Contact Details</h4>
 
-                    <p class="flow-text"><i class="mdi-communication-phone left"></i> (+91) - 9921156262</p>
+                   <div class="center-align"> <p class="flow-text "><i class="mdi-communication-phone "></i> (+91) - 9921156262</p></div>
 
-                    <p class="flow-text"><i class="mdi-communication-email left"></i> info@framen.com</p>
+                    <div class="center-align">  <p class="flow-text"><i class="mdi-communication-email "></i> info@framen.com</p></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12"><h4> Get in touch.</h4></div>
+                <div class="col s12 "><h4 class="center-align"> Get in touch.</h4></div>
                 <div class="col  s12 m4 l8 offset-m2 offset-l2">
 
                     <form class="col s12 " ng-submit="sendEmail()">
@@ -98,6 +98,13 @@
                                 <input id="email" type="email" class="validate" required="true"
                                        ng-model="email.address">
                                 <label for="email">Email</label>
+                            </input-field>
+                        </div>
+                        <div class="row">
+                            <input-field class="input-field col s12">
+                                <i class="mdi-action-subject prefix"></i>
+                                <input id="subject" type="text" class="validate" required="true" ng-model="email.subject">
+                                <label for="subject">Subject</label>
                             </input-field>
                         </div>
                         <div class="row">
@@ -143,10 +150,10 @@
                 © 2010 - 2015 Copyright Framen Shipping Limited
                 <div class="right">
                     Site Created by Clinton D'souza
-                    <a href="#" class="credPadding"><i class="fa fa-facebook fa-2x white-text"></i></a>
-                    <a href="#" class="credPadding"><i class="fa fa-twitter fa-2x white-text"></i></a>
-                    <a href="#" class="credPadding"><i class="fa fa-instagram fa-2x white-text"></i></a>
-                    <a href="#" class="credPadding"><i class="fa fa-envelope fa-2x white-text"></i></a>
+                    <a href="#" class="credPadding"><i class="fa fa-facebook fa-1x white-text"></i></a>
+                    <a href="#" class="credPadding"><i class="fa fa-twitter fa-1x white-text"></i></a>
+                    <a href="#" class="credPadding"><i class="fa fa-instagram fa-1x white-text"></i></a>
+                    <a href="#" class="credPadding"><i class="fa fa-envelope fa-1x white-text"></i></a>
                 </div>
             </div>
         </div>
