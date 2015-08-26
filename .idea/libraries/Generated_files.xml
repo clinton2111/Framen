@@ -3,18 +3,17 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.min.js" />
-        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.min.js" />
-        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shCore.min.js" />
-        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.min.js" />
-        <item url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-scroll/gulpfile.min.js" />
+        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.min.js" />
+        <item url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
+        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shCore.min.js" />
+        <item url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
+        <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.min.js" />
         <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.min.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.js" />
         <item url="file://$PROJECT_DIR$/js/app.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
-        <item url="file://$PROJECT_DIR$/bower_components/angular/angular.min.min.js" />
         <item url="file://$PROJECT_DIR$/js/services/services.min.js" />
       </sourceFilesUrls>
     </properties>
@@ -31,17 +30,20 @@
       <root url="file://$PROJECT_DIR$/app.min.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/guzzle/guzzle/tests/Guzzle/Tests/Http/server.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/guzzle/guzzle/docs/_static/prettify.min.js" />
-      <root url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/gulpfile.min.js" />
-      <root url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/gulpfile.min.js" />
+      <root url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shCore.min.js" />
+      <root url="file://$PROJECT_DIR$/bower_components/angular/index.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.min.js" />
       <root url="file://$PROJECT_DIR$/js/app.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
       <root url="file://$PROJECT_DIR$/js/services/services.min.js" />
