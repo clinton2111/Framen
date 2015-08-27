@@ -8,6 +8,7 @@ angular.module('framen').controller('mainController', [
         full_width: true,
         height: 800
       });
+      $scope.finLoading = true;
       center = new google.maps.LatLng(15.3912425, 73.8330925);
       mapOptions = {
         zoom: 16,
