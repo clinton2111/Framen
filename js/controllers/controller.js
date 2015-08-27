@@ -8,7 +8,7 @@ angular.module('framen').controller('mainController', [
         full_width: true,
         height: 800
       });
-      $scope.finLoading = true;
+      $("loading").hide();
       center = new google.maps.LatLng(15.3912425, 73.8330925);
       mapOptions = {
         zoom: 16,
@@ -89,7 +89,7 @@ angular.module('framen').controller('mainController', [
       $scope.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       infowindow = new google.maps.InfoWindow();
       img = {
-        url: '../assets/pointer.svg',
+        url: '../framen/assets/pointer.svg',
         origin: new google.maps.Point(0, 0)
       };
       marker = new google.maps.Marker({

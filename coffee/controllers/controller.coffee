@@ -6,7 +6,7 @@ angular.module 'framen'
     $ '.parallax'
     .parallax();
     $('.slider').slider({full_width: true, height: 800});
-    $scope.finLoading=true
+    $("loading").hide();
     center = new google.maps.LatLng(15.3912425, 73.8330925)
     mapOptions =
       zoom: 16
@@ -100,7 +100,7 @@ angular.module 'framen'
 
 
     img =
-      url: '../assets/pointer.svg'
+      url: '../framen/assets/pointer.svg'
       origin: new google.maps.Point(0, 0)
 
     marker = new google.maps.Marker
@@ -117,6 +117,9 @@ angular.module 'framen'
     google.maps.event.addListener marker, 'mouseout', ()->
     infowindow.close()
   );
+
+
+
   $scope.sendEmail = ()->
     mainServices.sendEmail($scope.email)
     .then (data)->
