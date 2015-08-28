@@ -1,7 +1,8 @@
 angular.module('framen').controller('mainController', [
-  '$scope', 'mainServices', function($scope, mainServices) {
+  '$scope', 'mainServices', '$q', '$window', function($scope, mainServices, $q, $window) {
+    var loadScript, q;
+    q = null;
     $scope.$on('$viewContentLoaded', function() {
-      var center, img, infowindow, mapOptions, marker;
       $(".button-collapse").sideNav();
       $('.parallax').parallax();
       $('.slider').slider({
@@ -9,6 +10,12 @@ angular.module('framen').controller('mainController', [
         height: 800
       });
       $("loading").hide();
+      q = $q.defer();
+      loadScript();
+      return q.promise;
+    });
+    $window.initMap = function() {
+      var center, img, infowindow, mapOptions, marker;
       center = new google.maps.LatLng(15.3912425, 73.8330925);
       mapOptions = {
         zoom: 16,
@@ -89,7 +96,7 @@ angular.module('framen').controller('mainController', [
       $scope.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       infowindow = new google.maps.InfoWindow();
       img = {
-        url: '../framen/assets/pointer.svg',
+        url: '../assets/pointer.svg',
         origin: new google.maps.Point(0, 0)
       };
       marker = new google.maps.Marker({
@@ -103,8 +110,15 @@ angular.module('framen').controller('mainController', [
         return marker.setMap($scope.map);
       });
       google.maps.event.addListener(marker, 'mouseout', function() {});
-      return infowindow.close();
-    });
+      infowindow.close();
+      return q.resolve;
+    };
+    loadScript = function() {
+      var script;
+      script = document.createElement('script');
+      script.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap';
+      return document.body.appendChild(script);
+    };
     return $scope.sendEmail = function() {
       return mainServices.sendEmail($scope.email).then(function(data) {
         var response;

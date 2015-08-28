@@ -10,9 +10,9 @@
         <item url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
         <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.min.js" />
         <item url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.min.js" />
-        <item url="file://$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.js" />
         <item url="file://$PROJECT_DIR$/js/app.min.js" />
+        <item url="file://$PROJECT_DIR$/js/directives/gmap.min.js" />
         <item url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
         <item url="file://$PROJECT_DIR$/js/services/services.min.js" />
       </sourceFilesUrls>
@@ -34,8 +34,10 @@
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.min.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/gulpfile.min.js" />
       <root url="file://$PROJECT_DIR$/js/controllers/controller.min.js" />
+      <root url="file://$PROJECT_DIR$/js/directives/gmap.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shCore.min.js" />
@@ -43,7 +45,6 @@
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.min.js" />
       <root url="file://$PROJECT_DIR$/api/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular-scroll/angular-scroll.min.js" />
-      <root url="file://$PROJECT_DIR$/node_modules/yuicompressor/nodejs/index.min.js" />
       <root url="file://$PROJECT_DIR$/js/app.min.js" />
       <root url="file://$PROJECT_DIR$/bower_components/angular/angular.min.js" />
       <root url="file://$PROJECT_DIR$/js/services/services.min.js" />

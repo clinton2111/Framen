@@ -1,5 +1,6 @@
 angular.module 'framen'
-.controller 'mainController', ['$scope', 'mainServices',($scope,mainServices)->
+.controller 'mainController', ['$scope', 'mainServices', '$q', '$window', ($scope, mainServices, $q, $window)->
+  q = null
   $scope.$on('$viewContentLoaded', ()->
     $ ".button-collapse"
     .sideNav();
@@ -7,6 +8,11 @@ angular.module 'framen'
     .parallax();
     $('.slider').slider({full_width: true, height: 800});
     $("loading").hide();
+    q = $q.defer()
+    loadScript();
+    q.promise
+  );
+  $window.initMap = ->
     center = new google.maps.LatLng(15.3912425, 73.8330925)
     mapOptions =
       zoom: 16
@@ -100,7 +106,7 @@ angular.module 'framen'
 
 
     img =
-      url: '../framen/assets/pointer.svg'
+      url: '../assets/pointer.svg'
       origin: new google.maps.Point(0, 0)
 
     marker = new google.maps.Marker
@@ -116,8 +122,12 @@ angular.module 'framen'
 
     google.maps.event.addListener marker, 'mouseout', ()->
     infowindow.close()
-  );
+    q.resolve
 
+  loadScript = ->
+    script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap';
+    document.body.appendChild(script);
 
 
   $scope.sendEmail = ()->
