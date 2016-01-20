@@ -7,8 +7,8 @@ $mail->SMTPAuth = true;
 $mail->CharSet = 'UTF-8';
 
 $mail->Host = 'smtp.sendgrid.net';
-$mail->Username = 'aventador_21';
-$mail->Password = 'Aventador2106';
+$mail->Username = '';
+$mail->Password = '';
 
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
