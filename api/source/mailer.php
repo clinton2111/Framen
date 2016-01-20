@@ -7,8 +7,8 @@ $mail->SMTPAuth = true;
 $mail->CharSet = 'UTF-8';
 
 $mail->Host = 'smtp.sendgrid.net';
-$mail->Username = 'aventador_21';
-$mail->Password = 'Aventador2106';
+$mail->Username = '';
+$mail->Password = '';
 
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
@@ -23,7 +23,7 @@ $mail->From = 'noreply@framin.in';
 $mail->FromName = $data->name . ' (via. Framin.in - Website)';
 
 //To address and name
-$mail->addAddress('clinton92@gmail.com', 'Clinton D\'souza');
+$mail->addAddress('clinton@example.com', 'Clinton D\'souza');
 
 //Address to which recipient will reply
 $mail->addReplyTo(trim($data->address), $data->name);
