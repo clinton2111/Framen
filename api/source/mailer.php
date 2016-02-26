@@ -23,7 +23,7 @@ $mail->From = 'noreply@framin.in';
 $mail->FromName = $data->name . ' (via. Framin.in - Website)';
 
 //To address and name
-$mail->addAddress('clinton92@gmail.com', 'Clinton D\'souza');
+$mail->addAddress('', 'Clinton D\'souza');
 
 //Address to which recipient will reply
 $mail->addReplyTo(trim($data->address), $data->name);
